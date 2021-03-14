@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Slide from '../../petterns/Slide/Slide';
-import SearchCar from '../../petterns/SearchCar/SearchCar';
+import Slide from '../../patterns/Slide/Slide';
+import SearchCar from '../../patterns/SearchCar/SearchCar';
 import srcBanner1 from '../../assets/img/slider1.jpg';
 import srcBanner2 from '../../assets/img/slider2.png';
 import srcBanner3 from '../../assets/img/slider3.png';
 import srcBanner4 from '../../assets/img/slider4.jpg';
 import './Home.scss';
-import Showcase from '../../petterns/Showcase/Showcase';
+import Showcase from '../../patterns/Showcase/Showcase';
 
 const Home = () => {
   const slides = [

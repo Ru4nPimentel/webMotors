@@ -2,8 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Home from './pages/Home/Home';
-import Footer from './petterns/Footer/Footer';
-import Header from './petterns/Header/Header';
+import Footer from './patterns/Footer/Footer';
+import Header from './patterns/Header/Header';
 
 export default function Routes() {
   return (
