@@ -1,0 +1,54 @@
+.inputMask {
+  border: 1px solid var(--color-light-grey);
+  height: 35px;
+  border-radius: 5px;
+  color: var(--color-light-grey);
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  background: var(--color-white);
+  width: 100%;
+  label {
+    width: 70px;
+    padding-left: 25px;
+    margin-right: 5px;
+    padding-top: 3px;
+    font-size: 0.875em;
+    cursor: pointer;
+    svg {
+      margin-left: -30px;
+      margin-top: -2px;
+      width: 20px;
+      height: 20px;
+      color: var(--color-red);
+      position: absolute;
+      transition: ease 0.3s;
+    }
+  }
+  input[type='text'] {
+    border: none;
+    height: 100%;
+    padding-top: 2px;
+    padding-left: 10px;
+    width: calc(100% - 195px);
+    color: var(--color-black);
+    font-weight: bold;
+  }
+  select {
+    height: 100%;
+    color: var(--color-light-grey);
+    cursor: pointer;
+    border: none;
+    border-left: 1px solid var(--color-light-grey);
+    width: 115px;
+    padding-left: 6px;
+    border-radius: 0;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .inputMask{
+    height: 45px;
+  }
+}

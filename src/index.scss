@@ -1,0 +1,130 @@
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/montserrat/Montserrat-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/montserrat/Montserrat-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url('./assets/fonts/montserrat/Montserrat-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/roboto/RobotoCondensed-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/roboto/RobotoCondensed-Italic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url('./assets/fonts/roboto/RobotoCondensed-Regular.ttf');
+  font-weight: 400;
+}
+
+body,
+h1,
+h2,
+ul,
+ul,
+li,
+p,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, sans-serif;
+}
+
+p,
+q {
+  font-family: Merriweather, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  &:focus {
+    outline-offset: none;
+    border: none;
+    outline: none;
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  --color-red: #f3123c;
+  --color-black: #2e2e37;
+  --color-dark-grey: #4d4c59;
+  --color-light-grey: #979797;
+  --color-grey: #f3f3f3;
+  --color-white: #fff;
+  --color-yellow: #f69d26;
+}
+
+main {
+  animation: show-down 0.8s forwards;
+}

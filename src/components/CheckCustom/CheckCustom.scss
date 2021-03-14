@@ -1,0 +1,43 @@
+.checkCustom {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  input[type='checkbox'] {
+    display: none;
+    &:checked + label i {
+      background: var(--color-red);
+      border-color: var(--color-red);
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+  .checkLabel {
+    cursor: pointer;
+    margin-right: 35px;
+    i {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+      border: 1px solid var(--color-black);
+      background: transparent;
+      position: relative;
+      top: 2px;
+      background: transparent;
+      transition: ease 0.3s;
+      border-radius: 3px;
+      margin-right: 5px;
+      &::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 2px;
+        left: 1px;
+        position: absolute;
+        opacity: 0;
+        transition: ease 0.3s;
+        background: url('../../assets/icon/check.png') no-repeat;
+      }
+    }
+  }
+}

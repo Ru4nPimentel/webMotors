@@ -1,0 +1,141 @@
+.formSearch {
+  background: var(--color-white);
+  padding: 10px;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  .form_typePurchase {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .form_editSearch {
+    display: flex;
+    justify-content: space-between;
+    .form_division {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(50% - 5px);
+      justify-content: space-between;
+      .configSelect {
+        width: calc(50% - 5px);
+        &.selectMargin {
+          margin-top: 10px;
+        }
+        &.fullSelect {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .form_divisionBtn {
+    display: flex;
+    justify-content: space-between;
+    .buttonFormat {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      button {
+        background: none;
+        border: none;
+        &[type='button'] {
+          color: var(--color-red);
+          font-size: 1em;
+          font-weight: 500;
+          transition: 0.3s ease;
+          cursor: pointer;
+          &:hover {
+            color: var(--color-black);
+          }
+        }
+        &[type='reset'] {
+          color: var(--color-light-grey);
+          font-size: 1em;
+          margin-right: 15px;
+          cursor: pointer;
+          transition: ease 0.3s;
+          &:hover {
+            color: var(--color-black);
+          }
+        }
+        &[type='submit'] {
+          background: var(--color-red);
+          width: 200px;
+          color: var(--color-white);
+          height: 40px;
+          border-radius: 4px;
+          text-transform: uppercase;
+          font-size: 1em;
+          font-weight: bold;
+          text-align: center;
+          border: none;
+          cursor: pointer;
+          padding-top: 4px;
+          transition: ease 0.3s;
+          box-shadow: 0 8px 12px -8px rgba(243, 18, 60, 0.3);
+          &:hover {
+            background: var(--color-black);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .formSearch {
+    .form_typePurchase{
+      justify-content: center;
+      .checkCustom {
+        display: block;
+        margin-bottom: 8px;
+        margin-top: 5px;
+        font-size: 20px;
+          i{
+            width: 20px;
+            height: 20px;
+            &::before{
+              top: 5px;
+              left: 4px;
+            }
+          }
+          .checkLabel {
+            margin-left: 20px;
+            margin-right: 20px;         
+          }
+      }
+    }
+    .form_editSearch{
+      flex-direction: column;
+      .form_division{
+        width: 100%;
+        margin-bottom: 15px;
+        .configSelect{
+          height: 45px;
+        }
+      }
+    }
+    .form_divisionBtn{
+      flex-direction: column;
+      .buttonFormat{
+        flex-direction: column;
+        button[type='button']{        
+          font-size: 18px;
+          font-weight: bold;
+          width: 100%;
+        }
+        button[type='reset'] {
+          font-size: 18px;
+          font-weight: bold;
+          width: 100%;
+          margin: 0;
+        }
+        button[type='submit']{
+          margin-top: 15px;
+          width: 90%;
+        }
+      }
+    }
+  }
+}

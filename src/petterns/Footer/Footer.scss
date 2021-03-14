@@ -1,0 +1,19 @@
+footer {
+  background-color: var(--color-black);
+  text-align: center;
+  height: 100px;
+  margin-top: 60px;
+  .santander{
+    height: 50px;
+    width: 100%;
+    background: #ea0002;
+    padding-top: 8px;
+    margin-bottom: 15px;
+    svg{
+      height: 30px;
+    }
+  }
+  small {
+    color: var(--color-white);
+  }
+}
