@@ -1,11 +1,12 @@
 import React from 'react';
-import CardCar from '../../components/CardCar/CardCar';
 
 import useFetch from '../../hooks/useFetch';
 import ButtonCustom from '../../components/ButtonCustom/ButtonCustom';
 import { Vehicles_GET } from '../../services/Api';
 import './Showcase.scss';
 import Loading from '../../components/Loading/Loading';
+
+const CardCar = React.lazy(() => import('../../components/CardCar/CardCar'));
 
 const Showcase = () => {
   const { request, loading } = useFetch();
@@ -38,11 +39,10 @@ const Showcase = () => {
       <h2>Recomendados para você</h2>
       <div className="showcase_content">
         <div className="showcase_box">
-          {loading ? (
-            <Loading />
-          ) : (
+          {loading && <Loading />}
+          <React.Suspense fallback={<div>carregando</div>}>
             <CardCar cardArray={vehicles} styleComponents="showcase_card" />
-          )}
+          </React.Suspense>
         </div>
         <nav className="showcase_navPage">
           <ButtonCustom
